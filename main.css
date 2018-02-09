@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0
+}
+
+@media only screen and (min-width:800px){
+  .grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 60px 700px 600px 600px 60px;
+    grid-gap: 10px 15px;
+    font-family: 'Lato', sans-serif;
+    grid-template-areas:
+    "A A A"
+    "B B B"
+    "C C D"
+    "E F G"
+    "H H H";
+  }
+
+  a{
+    margin: 20px;
+  }
+
+  .float-rigth{
+    float: right;
+  }
+
+  img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .text{
+    text-align: center;
+    padding: 20px 15px 0px 15px;
+  }
+
+  button {
+    background-color: #557f6d;
+    color: #FFF;
+    padding: 10px;
+    margin: 5%;
+  }
+
+  .a{
+      grid-area: A;
+      background-color: rgb(225, 230, 17);
+      padding: 20px;
+      font-weight:700;
+  }
+
+
+  .b{
+      grid-area: B;
+      background-image: url("images/textiles (4).jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #FFF;
+      font-size: 50px;
+      font-weight:900;
+  }
+
+  .c{
+      grid-area: C;
+      background-color: #dde572;
+  }
+
+  .d{
+      grid-area: D;
+      background-color: #fae29b;
+  }
+
+  .e{
+      grid-area: E;
+      background-color: #f2e7cb;
+
+  }
+
+  .f{
+      grid-area: F;
+      background-color: #f2e7cb;
+  }
+
+  .g{
+      grid-area: G;
+      background-color: #f2e7cb;
+  }
+
+  .h{
+      grid-area: H;
+      background-color: rgb(225, 230, 17);
+  }
+}
+
+
+@media only screen and (max-width:768px){
+  .grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 800px 600px 400px 400px 400px 400px 70px;
+    font-family: 'Lato', sans-serif;
+    grid-template-areas:
+    "A "
+    "B"
+    "C"
+    "D"
+    "E"
+    "F"
+    "G"
+    "H";
+  }
+
+  a{
+    margin: 2px;
+  }
+
+  .float-rigth{
+    float: right;
+  }
+
+  img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .text{
+    text-align: center;
+    padding: 20px 15px 0px 15px;
+    border-bottom: solid 1px #000;
+  }
+
+  button {
+    background-color: #557f6d;
+    color: #FFF;
+    padding: 10px;
+    margin: 5%;
+  }
+
+  .a{
+      grid-area: A;
+      background-color: rgb(225, 230, 17);
+      padding: 50px;
+  }
+
+
+  .b{
+      grid-area: B;
+      background-image: url("images/textiles (4).jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #FFF;
+      font-size: 50px;
+      font-weight:900;
+  }
+
+  .c{
+      grid-area: C;
+      background-color: #dde572;
+  }
+
+  .d{
+      grid-area: D;
+      background-color: #fae29b;
+  }
+
+  .e{
+      grid-area: E;
+      background-color: #f2e7cb;
+
+  }
+
+  .f{
+      grid-area: F;
+      background-color: #f2e7cb;
+  }
+
+  .g{
+      grid-area: G;
+      background-color: #f2e7cb;
+  }
+
+  .h{
+      grid-area: H;
+      background-color: rgb(225, 230, 17);
+  }
+}
